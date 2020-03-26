@@ -22,3 +22,7 @@ services:
     # tty: true
     volumes:
       - ./:/app
+    command: [
+      'bash', '-c',
+      'composer update'
+    ]
