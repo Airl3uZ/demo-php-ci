@@ -13,8 +13,7 @@ ENV WEB_DOCUMENT_ROOT: /app/html
 RUN cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime \
 && echo "${TIMEZONE}" >  /etc/timezone
 RUN git clone https://github.com/Airl3uZ/demo-php-ci.git
-WORKDIR demo-php-ci
-COPY ./* /app
+RUN mv demo-php-ci /app
 WORKDIR /app
 RUN composer update
 
