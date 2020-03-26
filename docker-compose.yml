@@ -3,7 +3,7 @@ services:
   web:
     image: webdevops/php-nginx
     ports:
-      - "8080:80"
+      - "8880:80"
     restart: always
     hostname: "webtest"
     #privileged: true
