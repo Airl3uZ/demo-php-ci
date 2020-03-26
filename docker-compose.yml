@@ -21,4 +21,4 @@ services:
       WEB_DOCUMENT_ROOT: /app/html
     # tty: true
     volumes:
-      - ../demo-php-ci:/app
+      - ./:/app
