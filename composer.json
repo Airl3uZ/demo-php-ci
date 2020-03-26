@@ -3,6 +3,6 @@
         "phpunit/phpunit": "4.8.*"
     },
     "autoload": {
-        "classmap": ["web/", "web/database/"]
+        "classmap": ["html/", "html/database/"]
     }
 }
