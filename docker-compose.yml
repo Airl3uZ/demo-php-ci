@@ -24,5 +24,5 @@ services:
       - ./:/app
     command: [
       'bash', '-c',
-      'composer update'
+      'cd /app && composer update'
     ]
