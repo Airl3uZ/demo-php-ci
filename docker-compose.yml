@@ -22,7 +22,4 @@ services:
     # tty: true
     volumes:
       - ./:/app
-    command: [
-      'bash', '-c',
-      'cd /app && composer update'
-    ]
+    command: [ "bash", "-c", "echo $HOMENAME" ]
