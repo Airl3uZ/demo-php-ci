@@ -20,5 +20,5 @@ services:
       fpm.pool.pm.status_path: /status.php  
       WEB_DOCUMENT_ROOT: /app/html
     volumes:
-      - ./:/app
+      - ./app:/app
     command: [ "bash", "-c", "cd /app && composer update" ]
