@@ -19,7 +19,6 @@ services:
       fpm.pool.listen: 0.0.0.0:9000
       fpm.pool.pm.status_path: /status.php  
       WEB_DOCUMENT_ROOT: /app/html
-    # tty: true
     volumes:
       - ./:/app
-    command: [ "bash", "-c", "echo $HOMENAME" ]
+    command: [ "bash", "-c", "cd /app && composer update" ]
