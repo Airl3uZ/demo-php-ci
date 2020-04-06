@@ -9,14 +9,14 @@
        <directory>./vendor</directory>
     </blacklist>
     <whitelist>
-         <directory>web</directory>
-         <directory>web/database</directory>
+         <directory>html</directory>
+         <directory>html/database</directory>
      </whitelist>
   </filter>
   <logging>
-    <log type="junit" target="results/phpunit/phpunit.xml" logIncompleteSkipped="false"/>
-    <log type="coverage-clover" target="results/coverage/clover.xml"/>
-    <log type="coverage-html" target="results/coverage/" charset="UTF-8"
+    <log type="junit" target="/var/cloudbees-jenkins-distribution/results/php-demo/phpunit/phpunit.xml" logIncompleteSkipped="false"/>
+    <log type="coverage-clover" target="/var/cloudbees-jenkins-distribution/results/php-demo/coverage/clover.xml"/>
+    <log type="coverage-html" target="/var/cloudbees-jenkins-distribution/results/php-demo/coverage/" charset="UTF-8"
       yui="true" highlight="false"
       lowUpperBound="35" highLowerBound="70"/>
   </logging>
