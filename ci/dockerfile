@@ -1,4 +1,10 @@
-FROM webdevops/php-nginx:latest
+FROM cloudbees/cl
+ARG user=jenkins
+ARG group=jenkins
+ARG uid=1000
+ARG gid=1000
+ARG jenkins_user_home=/home/${user}a
+
 ENV TIMEZONE Asia/Bangkok
 ENV PHP_UPLOAD_MAX_FILESIZE: 500m
 ENV PHP_POST_MAX_SIZE: 500m
@@ -12,9 +18,3 @@ ENV fpm.pool.pm.status_path: /status.php
 ENV WEB_DOCUMENT_ROOT: /app/html
 RUN cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime \
 && echo "${TIMEZONE}" >  /etc/timezone
-RUN git clone https://github.com/Airl3uZ/demo-php-ci.git
-RUN mv demo-php-ci /app
-WORKDIR /app
-RUN composer update
-
-
