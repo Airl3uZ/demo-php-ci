@@ -8,7 +8,7 @@ project:
   branch: citest
   localPath: data
   scm: github
-  steps:
+  steplist:
     - checkout
     - unittest
     - sonarscan
