@@ -10,6 +10,6 @@ project:
   scm: github
   testStep:
     - unittest
-    - sonarscan
-    - webscan
-    - owasp
+    # - sonarscan
+    # - webscan
+    # - owasp
