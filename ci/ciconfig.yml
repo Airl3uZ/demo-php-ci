@@ -1,7 +1,7 @@
 project:
   name: demo-php-ci
   # env: dev
-  project_lang: php
+  lang: php
   lang_ver: 7.2
   user: Airl3uZ
   repo: demo-php-ci
